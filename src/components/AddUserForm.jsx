@@ -17,7 +17,7 @@ const AddUserForm = () => {
 
     try {
       const response = await fetch(
-        "https://my-expense-tracker-gilt.vercel.app//api/add",
+        "https://my-expense-tracker-backend.vercel.app/api/add",
         {
           method: "POST",
           headers: {
