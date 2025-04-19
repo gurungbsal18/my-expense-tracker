@@ -17,7 +17,7 @@ const AddUserForm = () => {
 
     try {
       const response = await fetch(
-        "https://my-expense-tracker-backend.railway.internal/api/add",
+        "https://my-expense-tracker-backend-production.up.railway.app/api/add",
         {
           method: "POST",
           headers: {
