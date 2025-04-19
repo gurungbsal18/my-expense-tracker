@@ -16,13 +16,16 @@ const AddUserForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8000/api/add", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://my-expense-tracker-backend.railway.internal/api/add",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await response.json();
 
